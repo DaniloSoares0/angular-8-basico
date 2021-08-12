@@ -9,6 +9,7 @@ import { StarComponent } from './star/star.component';
 import { NavBarComponent } from './nav-bar/nav-bar.compoment';
 import { Erros404Component } from './error-404/error-404.component';
 import { CourseInfoComponent } from './courses/course.info.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CourseInfoComponent } from './courses/course.info.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: 'courses', component: CourseListComponent
